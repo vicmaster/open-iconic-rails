@@ -20,6 +20,12 @@ Or install it yourself as:
 
     $ gem install open-iconic-rails
 
+## Config
+
+Asset id not declared to be precompiled until you do:
+
+Add `Rails.application.config.assets.precompile += %w( open-iconic.min.svg )` to `config/initializers/assets.rb` and restart your server
+
 ## Usage
 
 ##### open_iconic :svg_class, :icon_name
@@ -36,7 +42,6 @@ open_iconic "icon", "account-login"
     </use>
   </svg>
 ```
-
 ## Todo
 
 1. Add sample code for bootstrap & foundation
